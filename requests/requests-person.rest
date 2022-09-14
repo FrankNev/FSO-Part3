@@ -1,16 +1,13 @@
-GET http://localhost:3001/api/persons/
-
-###
-GET http://localhost:3001/api/persons/2
+GET http://localhost:3001/api/persons
 
 ###
 POST http://localhost:3001/api/persons/
 Content-Type: application/json
 
 {
-   "name": "Julia Marquez",
-   "number": "65-8965651"
+   "name": "Ada Lovelace",
+   "number": "39-445323523"
 }
 
 ###
-DELETE http://localhost:3001/api/persons/88092
+DELETE http://localhost:3001/api/persons/63224025aa0129d4a7167411
