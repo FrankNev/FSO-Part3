@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const mongoose = require('mongoose')
 
 if (process.argv.length < 3) {
@@ -24,7 +25,7 @@ if (process.argv[3] && process.argv[4]) {
       number: process.argv[4],
    })
 
-   newPerson.save().then(response => {
+   newPerson.save().then(() => {
       console.log(`Added ${newPerson.name} to the phonebook`)
       mongoose.connection.close()
    })
@@ -33,7 +34,7 @@ if (process.argv[3] && process.argv[4]) {
       result.forEach(note => {
          console.log(note)
       })
-      
+
       mongoose.connection.close()
    })
 }
